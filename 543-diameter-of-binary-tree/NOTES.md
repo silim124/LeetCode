@@ -1,0 +1,3 @@
+- leaf node에서 시작해야 longest path 구할 수 있다.
+- left, right에서 각각 left, right에서의 max 값을 구하면 된다.
+- longest path는 left + right의 max
