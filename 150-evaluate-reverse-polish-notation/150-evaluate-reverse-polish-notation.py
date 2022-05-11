@@ -7,9 +7,8 @@ class Solution(object):
         nums = []
 
         for token in tokens:
-            if token in "+-*/":
-                second = nums.pop()
-                first = nums.pop()
+            if token in "+-*/%":
+                second, first = nums.pop(), nums.pop()
                 if token == "+":
                     nums.append(first + second)
                 elif token == "-":
