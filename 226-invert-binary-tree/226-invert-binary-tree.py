@@ -11,6 +11,14 @@ class Solution(object):
         :rtype: TreeNode
         """
         
-        if root:
-            root.left, root.right = self.invertTree(root.right), self.invertTree(root.left)
+        nodes = []
+        
+        nodes.append(root)
+        while nodes:
+            cur_node = nodes.pop()
+            if cur_node:
+                cur_node.left, cur_node.right = cur_node.right, cur_node.left
+                nodes.append(cur_node.left)
+                nodes.append(cur_node.right)
+            
         return root
