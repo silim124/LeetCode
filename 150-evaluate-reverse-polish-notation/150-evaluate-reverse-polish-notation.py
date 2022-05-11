@@ -1,5 +1,5 @@
 class Solution(object):
-    def evalRPN(self, tokens):
+    def evalRPN(self, tokens: List[str]) -> int:
         """
         :type tokens: List[str]
         :rtype: int
