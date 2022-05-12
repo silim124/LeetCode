@@ -17,6 +17,8 @@ class Solution(object):
             if not node:
                 return 0
             left, right = depth(node.left), depth(node.right)
+            if abs(left - right) > 1:
+                return False
             return 1 + max(left, right)
         
-        return abs(depth(root.left) - depth(root.right)) <= 1 and self.isBalanced(root.left) and self.isBalanced(root.right) 
+        return depth(root) and self.isBalanced(root.left) and self.isBalanced(root.right) 
