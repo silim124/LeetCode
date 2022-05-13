@@ -3,7 +3,5 @@ class Solution(object):
         first, second = 1, 1
         
         for i in range(n - 1):
-            tmp = first
-            first = first + second
-            second = tmp
-        return first
+            first, second = second, first + second
+        return second
