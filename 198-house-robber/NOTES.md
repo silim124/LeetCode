@@ -1,9 +1,9 @@
 ### 각각의 집에는 두 가지 선택지가 있습니다: rob / not_rob  
 
 
-### 옵션 1: rob인 경우 ->  rob = not_rob + nums[i]  
+#### 옵션 1: rob인 경우 ->  rob = not_rob + nums[i]  
 (현재 집을 강탈할 경우의 최대 금액 = 마지막 집을 강탈하지 않을 경우 최대 금액 + 현재 집의 금액)  
-옵션 2: rob가 아닌 경우 ->  not_rob = max(rob, not_rob)  
+#### 옵션 2: rob가 아닌 경우 ->  not_rob = max(rob, not_rob)  
 (현재 집을 강탈하지 않은 경우의 최대 금액 = 마지막 집에서 최대 금액, 강탈 또는 강탈하지 않은 경우)  
 
 
